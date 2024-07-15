@@ -1,5 +1,7 @@
 import { Roboto } from "next/font/google";
 import Link from "next/link";
+import logo from "../images/Eventful Text White.png";
+import Image from "next/image";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "300" });
 
@@ -9,19 +11,19 @@ const Header = () => {
       <div className="container">
         <header>
           <Link href="/">
-            <h1 className={roboto.className}>Eventful</h1>
+            <Image src={logo} width={100} alt="Eventful logo"></Image>
           </Link>
 
           <nav>
             <ul className="nav-links">
               <li className="nav-item">
-                <Link href="/">Home</Link>
-              </li>
-              <li className="nav-item">
                 <Link href="/events">Find Events</Link>
               </li>
               <li className="nav-item">
                 <Link href="/create-event">Create Event</Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/about">About</Link>
               </li>
               <li className="nav-item">
                 <Link href="/sign-in">Log In</Link>
