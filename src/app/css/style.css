@@ -42,5 +42,5 @@ header a {
 
 .nav-item a:hover {
   font-size: 18px;
-  color: var(--primary-color);
+  color: #000;
 }

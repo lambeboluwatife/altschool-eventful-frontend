@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   title: "Eventful - Create and discover events around you.",
   description:
     "Eventful's your passport to a world of unforgettable moments. From pulsating concerts to captivating theater performances, and thrilling sports events to enlightening cultural gatherings",
+  keywords:
+    "events, event, eventful, eventbrite, moments, concerts, seminars, theatre, performance, sports, sports events, cultural gathering",
 };
 
 export default function RootLayout({
