@@ -4,6 +4,33 @@
   margin: 0;
 }
 
+:root {
+  /* colors */
+  /* ### Primary */
+  --primary-color: hsl(10, 86%, 58%);
+  --very-light-grey: hsl(0, 20%, 93%);
+  --light-grey: hsl(0, 0%, 80%);
+  --dark-grey: hsl(0, 2%, 21%);
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(0, 100%, 2%);
+  --cyan: hsl(186, 34%, 60%);
+
+  /* // ### Neutral */
+
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+  --dark-blue: hsl(204, 91%, 9%);
+
+  /* sizes */
+  --tiny: 2rem;
+  --small: 4rem;
+  --medium: 6rem;
+  --big: 8rem;
+  --large: 10rem;
+}
+
 html,
 body {
   margin: 0;
