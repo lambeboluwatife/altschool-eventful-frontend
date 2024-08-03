@@ -6,7 +6,10 @@ import logo from "../images/Eventful Text Red.png";
 
 interface FormData {
   name: string;
+  username: string;
   email: string;
+  role: string;
+  organizationName?: string;
   password: string;
   verifyPassword: string;
 }
@@ -14,7 +17,10 @@ interface FormData {
 const RegisterPage: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
+    username: "",
     email: "",
+    role: "",
+    organizationName: "",
     password: "",
     verifyPassword: "",
   });
@@ -55,7 +61,10 @@ const RegisterPage: React.FC = () => {
 
         setFormData({
           name: "",
+          username: "",
           email: "",
+          role: "",
+          organizationName: "",
           password: "",
           verifyPassword: "",
         });
@@ -94,6 +103,17 @@ const RegisterPage: React.FC = () => {
             </div>
             <div className="form-group">
               <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Username"
+                value={formData.username}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <input
                 type="email"
                 id="email"
                 name="email"
@@ -101,6 +121,25 @@ const RegisterPage: React.FC = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
+              />
+            </div>
+            <div className="form-group">
+              <select name="role" id="role"  value={formData.role}
+                onChange={handleChange}
+                required>
+                  <option selected>Select Role</option>
+                  <option value="organizer">Organizer</option>
+                  <option value="attendee">Attendee</option>
+              </select>
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                id="organizationName"
+                name="organizationName"
+                placeholder="Organization Name"
+                value={formData.organizationName}
+                onChange={handleChange}
               />
             </div>
             <div className="form-group">
