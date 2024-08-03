@@ -14,7 +14,7 @@ const LoginPage: React.FC = () => {
 
     try {
       axios
-        .post("http://localhost:5000/users/login", {
+        .post("https://altschool-eventful-backend.onrender.com/users/login", {
           email,
           password,
         })
@@ -76,7 +76,7 @@ const LoginPage: React.FC = () => {
             <div>
               <span>
                 Don't have an account yet?
-                <a className="text-danger" href="/users/register">
+                <a className="text-danger" href="/sign-up">
                   Create one
                 </a>
               </span>

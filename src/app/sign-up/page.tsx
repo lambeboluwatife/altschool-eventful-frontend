@@ -37,18 +37,21 @@ const RegisterPage: React.FC = () => {
     console.log("Form Data:", formData);
     console.log("JSON String:", JSON.stringify(formData));
     try {
-      const response = await fetch("http://localhost:5000/users/register", {
-        method: "POST",
-        mode: "cors",
-        credentials: "include",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://altschool-eventful-backend.onrender.com/users/register",
+        {
+          method: "POST",
+          mode: "cors",
+          credentials: "include",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (response.ok) {
-        console.log("Account created successfully")
+        console.log("Account created successfully");
 
         setFormData({
           name: "",
@@ -122,18 +125,15 @@ const RegisterPage: React.FC = () => {
                 required
               />
             </div>
-            <small>
-              <a href="#">Forgot your password?</a>{" "}
-            </small>
             <div className="form-group">
-              <button type="submit">SIGN IN</button>
+              <button type="submit">SIGN UP</button>
             </div>
             <hr />
             <div>
               <span>
-                Don't have an account yet?
-                <a className="text-danger" href="/users/register">
-                  Create one
+                Have an account?
+                <a className="text-danger" href="/sign-in">
+                  Sign In
                 </a>
               </span>
             </div>
