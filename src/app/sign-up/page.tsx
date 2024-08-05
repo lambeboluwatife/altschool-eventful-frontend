@@ -127,7 +127,9 @@ const RegisterPage: React.FC = () => {
               <select name="role" id="role"  value={formData.role}
                 onChange={handleChange}
                 required>
-                  <option selected>Select Role</option>
+                  <option value="" disabled hidden>
+                    Select Role
+                  </option>
                   <option value="organizer">Organizer</option>
                   <option value="attendee">Attendee</option>
               </select>
