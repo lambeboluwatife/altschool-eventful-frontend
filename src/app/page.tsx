@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Showcase from "./components/Showcase";
+import Showcase from "./pages/Home/Showcase";
 import ScrollAwareNavbar from "./components/ScrollAwareNavbar";
 
 const Home = () => {
