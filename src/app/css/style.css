@@ -42,5 +42,46 @@ header a {
 
 .nav-item a:hover {
   font-size: 18px;
-  color: #000;
+  color: red;
+}
+
+.navbar-search input {
+  background-color: transparent;
+  border: 1.5px solid #fff;
+  border-radius: 20px;
+  padding-inline: 10px;
+  color: #fff;
+  height: 30px;
+}
+
+::placeholder {
+  font-size: smaller;
+  color: #fff;
+}
+
+.showcase {
+  background-image: url("../images/bg-image3.jpg");
+  background-blend-mode: screen;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  height: 100vh;
+}
+
+.showcase h1 {
+  font-size: 6rem;
+  letter-spacing: -.02em;
+  color: red;
+  /* color: #fff; */
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  margin-top: 13rem;
+}
+
+.showcase h2 {
+  margin-top: 1rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  color: #fff;
 }

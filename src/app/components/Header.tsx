@@ -5,9 +5,17 @@ import Image from "next/image";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "300" });
 
-const Header = () => {
+type HeaderProps = {
+  backgroundColor: string;
+};
+
+const Header: React.FC<HeaderProps>= ({backgroundColor}) => {
+  const navbarStyle = {
+    backgroundColor: backgroundColor,
+  }
+
   return (
-    <div className="nav">
+    <div className="nav" style={navbarStyle}>
       <div className="container">
         <header>
           <Link href="/">
@@ -16,21 +24,26 @@ const Header = () => {
 
           <nav>
             <ul className="nav-links">
-              <li className="nav-item">
-                <Link href="/events">Find Events</Link>
+            <li className="nav-item">
+                <Link href="/">Home</Link>
               </li>
               <li className="nav-item">
-                <Link href="/create-event">Create Event</Link>
+                <Link href="/events">Events</Link>
               </li>
               <li className="nav-item">
-                <Link href="/about">About</Link>
+                <Link href="/about">About Us</Link>
               </li>
               <li className="nav-item">
-                <Link href="/sign-in">Log In</Link>
+                <Link href="/sign-in">Sign In</Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link href="/sign-up">Sign Up</Link>
-              </li>
+              </li> */}
+              <div className="navbar-search">
+                <form>
+                  <input type="search" name="search" id="search" required placeholder="Search For Event" />
+                </form>
+              </div>
             </ul>
           </nav>
         </header>

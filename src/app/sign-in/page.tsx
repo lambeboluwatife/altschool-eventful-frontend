@@ -20,7 +20,6 @@ const LoginPage: React.FC = () => {
         })
         .then(function (response) {
           console.log(response);
-          // Storing token in localStorage
           const token = response.data.token;
           localStorage.setItem("token", token);
 
@@ -28,7 +27,7 @@ const LoginPage: React.FC = () => {
           setPassword("");
         })
         .catch(function (error) {
-          console.error("Error:", error.response.data);
+          console.error("Error:", error.response);
         });
     } catch (error: any) {
       console.error(error);
