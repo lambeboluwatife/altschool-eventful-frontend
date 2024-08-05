@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Showcase from "./pages/Home/Showcase";
 import ScrollAwareNavbar from "./components/ScrollAwareNavbar";
+import Features from "./pages/Home/Features";
 
 const Home = () => {
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
@@ -9,6 +10,7 @@ const Home = () => {
     <div>
       <ScrollAwareNavbar />
       <Showcase />
+      <Features />
     </div>
   );
 };

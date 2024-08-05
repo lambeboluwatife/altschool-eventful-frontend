@@ -10,7 +10,7 @@ const ScrollAwareNavbar = () => {
         const position = window.scrollY
         setScrollPosition(position)
 
-        if (scrollPosition > 600) {
+        if (position > 50) {
             setNavbarColor("red")
         }  else {
             setNavbarColor('transparent')
