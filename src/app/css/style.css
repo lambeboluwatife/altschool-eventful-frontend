@@ -60,7 +60,7 @@ header a {
 }
 
 .showcase {
-  background-image: url("../images/bg-image3.jpg");
+  background-image: url("../images/bg-image3.webp");
   background-blend-mode: screen;
   background-size: cover;
   background-position: center;
@@ -74,7 +74,6 @@ header a {
   font-size: 6rem;
   letter-spacing: -.02em;
   color: red;
-  /* color: #fff; */
   font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   margin-top: 12rem;
 }
