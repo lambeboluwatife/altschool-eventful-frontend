@@ -76,7 +76,7 @@ header a {
   color: red;
   /* color: #fff; */
   font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  margin-top: 13rem;
+  margin-top: 12rem;
 }
 
 .showcase h2 {
@@ -84,4 +84,39 @@ header a {
   line-height: 1.5;
   font-size: 1.5rem;
   color: #fff;
+}
+
+.showcase-btn {
+  margin: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background: red;
+  color: #fff;
+  border: none;
+  padding: 20px 40px;
+  margin: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:hover {
+  transform: scale(0.95);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
 }
