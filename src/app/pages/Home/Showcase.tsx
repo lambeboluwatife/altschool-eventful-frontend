@@ -8,8 +8,8 @@ const Showcase = () => {
             <h2>Eventful is more than just a ticketing platform; <br />it's your passport to a world of unforgettable moments.</h2>
 
             <div className="showcase-btn">
-               <Button text="Find your event" color="red" textColor="white" link="/events"  />
-               <Button text="Create an event" color="white" textColor="red" link="/events"  />
+               <Button text="Discover Events" color="red" textColor="white" link="/events"  />
+               <Button text="Create an Event" color="white" textColor="red" link="/events"  />
             </div>
         </div>
     </div>
